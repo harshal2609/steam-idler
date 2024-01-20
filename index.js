@@ -74,7 +74,7 @@ var username5 = process.env.username5;
 var password5 = process.env.password5;
 var shared_secret5 = process.env.shared5;
 
-var games5 = [730, 440, 570, 236390, 1222670, 2073850, 578080, 230410, 1172470, 1085660, 552990, 223750, 444200, 1449850, 1284210, 2357570];  // Enter here AppIDs of the needed games
+var games5 = [730, 440, 570, 236390, 1222670, 2073850, 578080, 230410, 1172470, 1085660, 552990, 223750, 444200, 1449850, 1284210, 2357570, 1962663, 1677740, 2333480, 238960, 291550, 438100, 386360, 1974050, 761890, 2331260, 1568590, 1286830, 1240440, 1928420, 766570, 1997040];  // Enter here AppIDs of the needed games
 var status5 = 1;  // 1 - online, 7 - invisible
 
 
@@ -91,7 +91,7 @@ var username6 = process.env.username6;
 var password6 = process.env.password6;
 var shared_secret6 = process.env.shared6;
 
-var games6 = [730, 440, 570, 236390, 1222670, 2073850, 578080, 230410, 1172470, 1085660, 552990, 223750, 444200, 1449850, 1284210, 2357570];  // Enter here AppIDs of the needed games
+var games6 = [730, 440, 570, 236390, 1222670, 2073850, 578080, 230410, 1172470, 1085660, 552990, 223750, 444200, 1449850, 1284210, 2357570, 1962663, 1677740, 2333480, 238960, 291550, 438100, 386360, 1974050, 761890, 2331260, 1568590, 1286830, 1240440, 1928420, 766570, 1997040];  // Enter here AppIDs of the needed games
 var status6 = 1;  // 1 - online, 7 - invisible
 
 
@@ -104,35 +104,32 @@ user6.on('loggedOn', () => {
 });
 
 
-var username7 = process.env.username7;
-var password7 = process.env.password7;
-var shared_secret7 = process.env.shared7;
+// var username7 = process.env.username7;
+// var password7 = process.env.password7;
+// var shared_secret7 = process.env.shared7;
 
-var games7 = [730, 440, 570, 236390, 1222670, 2073850, 578080, 230410, 1172470, 1085660, 552990, 223750, 444200, 1449850, 1284210, 2357570];  // Enter here AppIDs of the needed games
-var status7 = 1;  // 1 - online, 7 - invisible
+// var games7 = [730, 440, 570, 236390, 1222670, 2073850, 578080, 230410, 1172470, 1085660, 552990, 223750, 444200, 1449850, 1284210, 2357570, 1962663, 1677740, 2333480, 238960, 291550, 438100, 386360, 1974050, 761890, 2331260, 1568590, 1286830, 1240440, 1928420, 766570, 1997040];  // Enter here AppIDs of the needed games
+// var status7 = 1;  // 1 - online, 7 - invisible
 
+// user7 = new steamUser();
+// user7.logOn({"accountName": username7, "password": password7, "twoFactorCode": steamTotp.generateAuthCode(shared_secret7)});
+// user7.on('loggedOn', () => {
+//         if(user7.steamID != null) console.log(use7.steamID + ' - Successfully logged on');
+//         user7.setPersona(status7);               
+// 	user7.gamesPlayed(game7);
+// });
 
-user7 = new steamUser();
-user7.logOn({"accountName": username7, "password": password7, "twoFactorCode": steamTotp.generateAuthCode(shared_secret7)});
-user7.on('loggedOn', () => {
-        if(user7.steamID != null) console.log(use7.steamID + ' - Successfully logged on');
-        user7.setPersona(status7);               
-	user7.gamesPlayed(game7);
-});
+// var username8 = process.env.username8;
+// var password8 = process.env.password8;
+// var shared_secret8 = process.env.shared8;
 
+// var games8 = [730, 440, 570, 236390, 1222670, 2073850, 578080, 230410, 1172470, 1085660, 552990, 223750, 444200, 1449850, 1284210, 2357570, 1962663, 1677740, 2333480, 238960, 291550, 438100, 386360, 1974050, 761890, 2331260, 1568590, 1286830, 1240440, 1928420, 766570, 1997040];  // Enter here AppIDs of the needed games
+// var status8 = 1;  // 1 - online, 7 - invisible
 
-var username8 = process.env.username4;
-var password8 = process.env.password4;
-var shared_secret8 = process.env.shared4;
-
-var games8 = [730, 440, 570, 236390, 1222670, 2073850, 578080, 230410, 1172470, 1085660, 552990, 223750, 444200, 1449850, 1284210, 2357570];  // Enter here AppIDs of the needed games
-var status8 = 1;  // 1 - online, 7 - invisible
-
-
-user8 = new steamUser();
-user8.logOn({"accountName": username8, "password": password8, "twoFactorCode": steamTotp.generateAuthCode(shared_secret8)});
-user8.on('loggedOn', () => {
-        if(user8.steamID != null) console.log(user8.steamID + ' - Successfully logged on');
-        user8.setPersona(status8);               
-	user8.gamesPlayed(games8);
-});
+// user8 = new steamUser();
+// user8.logOn({"accountName": username8, "password": password8, "twoFactorCode": steamTotp.generateAuthCode(shared_secret8)});
+// user8.on('loggedOn', () => {
+//         if(user8.steamID != null) console.log(user8.steamID + ' - Successfully logged on');
+//         user8.setPersona(status8);               
+// 	user8.gamesPlayed(games8);
+// });
