@@ -115,7 +115,7 @@ user6.on('loggedOn', () => {
  user7.on('loggedOn', () => {
          if(user7.steamID != null) console.log(user7.steamID + ' - Successfully logged on');
          user7.setPersona(status7);               
- 	user7.gamesPlayed(game7);
+ 	user7.gamesPlayed(games7);
  });
 
  var username8 = process.env.username8;
